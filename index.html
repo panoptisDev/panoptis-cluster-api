@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panoptis Cluster API Usage</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/css/bulma.css" />
+  </head>
+
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article
+                class="tile is-child notification is-primary is-align-items-stretch"
+              >
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">TPS</p>
+                    <p class="title" id="araio-tps"></p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box is-align-items-stretch">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">CURRENT SLOT</p>
+                    <p class="title" id="araio-curslot"></p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box is-align-items-stretch">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">BLOCK TIME</p>
+                    <p class="title" id="araio-blocktime"></p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box is-align-items-stretch">
+                <div class="level-item has-text-centered">
+                  <div>
+                    <p class="heading">INFLATION</p>
+                    <p class="title"></p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <p class="heading">Epoch Progress</p>
+          <progress id="progressId" class="progress" value="" max="100"
+            >80%</progress
+          >
+          <p><span class="tag is-link">VanillaJS</span></p>
+          <h1 class="title">Panoptis cluster info</h1>
+          <h2 class="subtitle">See the other functions here</h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
